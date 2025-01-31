@@ -1,5 +1,8 @@
 # Interactive Periodic Table
 
+Webpage link:
+https://yfa2nw.github.io/interactive-periodic-table/
+
 This is a webpage containing an interactive periodic table. The webpage is divided into 4 categories.
 1. The periodic table itself alongside element properties
 2. Charts demonstrating periodic table trends
@@ -50,7 +53,9 @@ electron configurational standpoint.
 ## Micellaneous
 
 As mentioned in the webpage itself, this GitHub project is actually a side project I decided to dive into. It is designed to be 
-a supplementary material for Project MEEP - pre-Medical Electronic Education Platform, a website dedicated to create high-quality, 
+a supplementary material for Project MEEP - pre-Medical Electronic Education Platform - a website dedicated to create high-quality, 
 accessible, practice-heavy education materials for aspiring medical students.
 
 As of 2025, the website is still heavily under construction, but do visit! it's https://yfmeep.com
+
+Also, I am not a proficient coder by any means, so please forgive me if the code looks atrocious.

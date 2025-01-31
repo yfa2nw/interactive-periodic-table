@@ -1,0 +1,424 @@
+/*Base customization*/
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+.website-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+}
+.help-icon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    border: 3px solid #333;
+    border-radius: 50%;
+    margin: 0 20px;
+    transition: 0.2s;
+}
+.help-icon:hover {
+    scale: 1.2;
+    background-color: #333;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+.empty-row {
+    border: none;
+    padding: 30px;
+}
+.group-row {
+    border: none;
+    padding: 15px;
+    vertical-align: top;
+}
+.group-row div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.group-name {
+    font-size: 0.8em;
+    color: #555;
+}
+.group-number {
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+}
+.period-number{
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    border: none;
+    padding: 20px;
+}
+.la-ac {
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.2;
+    border: 3px solid #f4f4f4;
+}
+.la-ac div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.element {
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 15px;
+    line-height: 1.2;
+    border: 3px solid #f4f4f4;
+}
+.element:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.5);
+}
+.element div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.atomic-number {
+    font-size: 0.8em;
+    color: #555;
+}
+.symbol {
+    font-size: 1.2em;
+}
+.empty {
+    border: none;
+}
+
+/* Color Coding By Category */
+.alkali-metal {
+    background-color: #FF6666;
+}
+.alkaline-earth-metal {
+    background-color: #FFB266;
+}
+.transition-metal {
+    background-color: #87CEEB;
+}
+.lanthanide {
+    background-color: #98FB98;
+}
+.actinide {
+    background-color: #8FBC8F;
+}
+.post-transition-metal {
+    background-color: #ADD8E6;
+}
+.metalloid {
+    background-color: #00FFFF;
+}
+.nonmetal {
+    background-color: #FFFF99;
+}
+.halogen {
+    background-color: #FFA500;
+}
+.noble-gas {
+    background-color: #FFB6C1;
+}
+
+.nav-menu-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1850px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px;
+}
+
+.nav-menu-title {
+    margin: auto;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.nav-button {
+    font-size: 20px;
+    padding: 8px 20px;
+    width: 220px;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.big-help-text-container {
+    position: absolute;
+    width: 700px;
+    padding: 20px;
+    margin: 20px;
+    top: 1980px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.help-text-title {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.help-text {
+    font-size: 20px;
+    line-height: 2;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.category-text-detail-summary {
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+.category-text-detail-summary:hover {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.element-text-detail-summary {
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+.element-text-detail-summary:hover {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.trend-text-detail-summary {
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+#atomic-radius-text-detail-summary:hover {
+    background-color: #1e90ff;
+}
+
+#ionization-energy-text-detail-summary:hover {
+    background-color: #ff4500;
+}
+
+#electron-affinity-text-detail-summary:hover {
+    background-color: #32cd32;
+}
+
+#electronegativity-text-detail-summary:hover {
+    background-color: #ffd700;
+}
+
+#density-text-detail-summary:hover {
+    background-color: #8b4513;
+}
+
+#melting-boiling-point-text-detail-summary:hover {
+    background-color: #dc143c;
+}
+
+#atomic-radius-text-detail-summary:hover,
+#ionization-energy-text-detail-summary:hover,
+#electron-affinity-text-detail-summary:hover,
+#electronegativity-text-detail-summary:hover,
+#density-text-detail-summary:hover,
+#melting-boiling-point-text-detail-summary:hover {
+    color: #f4f4f4;
+}
+
+details {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+  
+details[open] .detail-text {
+    max-height: 1000px; /* Set a sufficiently large max-height */
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+  
+.detail-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+#intro-text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    animation: containerAnimation 0.5s forwards;
+}
+
+#color-text-container,
+#element-text-container,
+#trend-text-container {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background: transparent;
+    animation: containerAnimation 0.5s forwards;
+}
+
+@keyframes containerAnimation {
+    0% {
+        opacity: 0;
+        scale: 0.8;
+    };
+    100% {
+        opacity: 1;
+        scale: 1;
+    };
+}
+
+.hidden-container {
+    animation: containerExitAnimation 0.5s forwards !important;
+}
+
+@keyframes containerExitAnimation {
+    0% {
+        opacity: 1;
+        scale: 1;
+    };
+    100% {
+        opacity: 0;
+        scale: 0.8;
+    };
+}
+
+.q-menu-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 2700px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px;
+}
+
+.q-menu-title-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+}
+
+.q-menu-title {
+    margin: auto;
+    width: 300px;
+}
+
+.q-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.q-button {
+    font-size: 20px;
+    padding: 15px 20px;
+    width: 420px;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: left;
+}
+
+.q-button:hover {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.big-q-text-container {
+    position: absolute;
+    width: 700px;
+    padding: 20px;
+    margin: 20px;
+    top: 2900px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.q-text-title {
+    font-weight: bold;
+    font-size: 20px;
+    transform: translate(40px, 18px);
+}
+
+.q-text {
+    font-size: 20px;
+    line-height: 2;
+    height: 80vh;
+    overflow-y: auto;
+    width: 700px;
+}
+
+#lv1-q-text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    animation: containerAnimation 0.5s forwards;
+}
+
+#lv2-q-text-container,
+#lv3-q-text-container {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background: transparent;
+    animation: containerAnimation 0.5s forwards;
+}
+
+.epilogue {
+    position: absolute;
+    width: 700px;
+    padding: 20px;
+    margin: 20px;
+    top: 3650px;
+    left: 50%;
+    transform: translateX(-50%);
+}
